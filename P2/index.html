@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <p>Create Account</p>
+      </div>
+      <div class="main">
+        <div class="inner-grid">
+          <div class="first-name">
+            <label for="fname">
+              First Name*
+              <br />
+              <input
+                type="text"
+                placeholder="Enter you first name"
+                id="fname"
+              />
+            </label>
+          </div>
+          <div class="last-name">
+            <label for="lname">
+              Last Name* <br />
+              <input
+                type="text"
+                placeholder="Enter your Last name"
+                id="lname"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="email">
+          <label for="email">
+            Email* <br />
+            <input type="email" id="email" placeholder="Enter your email" />
+          </label>
+        </div>
+        <div class="inner-grid">
+          <div class="password">
+            <label for="pwd">
+              Password* <br />
+              <input
+                type="password"
+                id="pwd"
+                placeholder="Enter your password"
+              />
+            </label>
+          </div>
+          <div class="confirm-password">
+            <label for="c-pwd"
+              >Confirm Password*
+              <br />
+              <input
+                type="password"
+                id="c-pwd"
+                placeholder="Enter your password again"
+              />
+            </label>
+          </div>
+          <div class="gender">
+            <label for="gender">
+              Gender:
+              <br />
+              <div class="m-f">
+                <input type="radio" name="gender" value="Male" /> Male
+                <input type="radio" name="gender" value="Female" /> Female
+              </div>
+            </label>
+          </div>
+          <div class="hobby">
+            <label for="hobbies">
+              Hobbies<br />
+              <div class="hobbies">
+                <input type="checkbox" /><span> Music</span>
+                <input type="checkbox" /><span> Travels</span>
+                <input type="checkbox" /> <span> Sports</span>
+                <input type="checkbox" /><span> Movies</span>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="about-income">
+          <div class="s-income">
+            <label for="source-income">
+              Source of Income <br />
+              <select name="income-source" id="source-income">
+                <option value="Employed">Employed</option>
+                <option value="Employed">Employed</option>
+                <option value="Employed">Employed</option>
+                <option value="Employed">Employed</option>
+              </select>
+            </label>
+          </div>
+          <div class="income">
+            <label for="range-income"
+              >Income <br />
+              <input type="range" />
+            </label>
+          </div>
+          <div class="income-box"><span>50K</span></div>
+        </div>
+        <div class="inner-grid">
+          <div class="profile">
+            <label for="upload-file"
+              >Upload Profile Picture
+              <input type="file" />
+            </label>
+          </div>
+          <div class="age">
+            <label for="Age">
+              Age
+              <input type="number" placeholder="Enter your age " />
+            </label>
+          </div>
+        </div>
+        <div class="Bio">
+          <label for="bio">
+            Bio <br />
+            <textarea name="bio" id="bio"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="tail">
+        <label class="create-btn">
+          <input type="submit" value="Create" />
+        </label>
+      </div>
+    </div>
+  </body>
+</html>

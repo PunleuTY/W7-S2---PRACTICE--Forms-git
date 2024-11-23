@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part-2</title>
+    <style>
+      #name:focus {
+        border: green;
+      }
+      input[type="submit"] {
+        margin: 20px;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      input[type="submit"]:hover {
+        background: #e1e1e1;
+      }
+      input[type="searchbar"] {
+        margin: 20px;
+        padding: 10px;
+      }
+      input[type="searchbar"]:focus {
+        outline: none;
+        border-color: blue;
+        box-shadow: 1px 2px greenyellow;
+      }
+      .Checkbox {
+        margin: 20px;
+        font-size: 20px;
+      }
+      .Checkbox input {
+        cursor: pointer;
+      }
+      .Checkbox input:checked {
+        accent-color: black;
+        transform: scale(2);
+      }
+      input:checked {
+        accent-color: green;
+        transform: scale(2);
+      }
+      myCheckbox input:indeterminate {
+        box-shadow: 0 0 5px 3px red;
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="name">Name:</label>
+    <input type="text" id="name" />
+    <br />
+    <label for="submit-button">Submit button: </label>
+    <input type="submit" id="submit-button" value="Submit" />
+    <br />
+    <label for="searchbar">SearchBar:</label>
+    <input type="searchbar" placeholder="Search..." class="searchbar" />
+    <br />
+    <label class="Checkbox"> <input type="checkbox" /> A </label>
+    <input type="checkbox" id="myCheckbox" /> Checkbox
+    <script>
+      const checkbox = document.getElementById("myCheckbox");
+      checkbox.indeterminate = true;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car wash Appointment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-layout">
+        <img src="./../P3/image & Icons/Carspa.jpg" alt="Carspa-logo" />
+      </div>
+      <div class="main-content">
+        <div class="title">
+          <h1>Book an Car Appointment</h1>
+          <span>
+            Car washes can be self-service, fully automated service with all
+            cleaning options.</span
+          >
+        </div>
+        <div class="service-options">
+          <div class="tunnel-wash">
+            <input
+              type="radio"
+              id="tunnel"
+              name="service"
+              value="tunnel-wash"
+            />
+            <label for="tunnel">
+              <img src="./image & Icons/tunnel wash.png" alt="tunnel" />
+            </label>
+            <span>Tunnel</span>
+          </div>
+          <div class="self-wash">
+            <input type="radio" id="self" name="service" value="self-wash" />
+            <label for="self">
+              <img src="./image & Icons/Self-wash.png" alt="self" />
+            </label>
+            <span>Self</span>
+          </div>
+          <div class="hand-wash">
+            <input type="radio" id="hand" name="service" value="hand-wash" />
+            <label for="hand">
+              <img src="./image & Icons/Hand wash.png" alt="hand" />
+            </label>
+            <span>Head</span>
+          </div>
+          <div class="chemical-wash">
+            <input
+              type="radio"
+              id="chemical"
+              name="service"
+              value="chemical-wash"
+            />
+            <label for="chemical">
+              <img src="./image & Icons/Chemical Wash.png" alt="chemical" />
+              <span>Chemical</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="user-info">
+          <div class="user-name">
+            <label for="name">
+              Name
+              <br />
+              <input type="text" id="name" placeholder="Enter your name" />
+            </label>
+          </div>
+          <div class="user-email">
+            <label for="email">
+              Email <br />
+              <input type="email" id="email" placeholder="Enter your email" />
+            </label>
+          </div>
+        </div>
+
+        <div class="user-selection">
+          <div class="user-city">
+            <label for="city">
+              Select a city <br />
+              <select name="city" id="city">
+                <option value="city1">Phnom Penh, Cambodia</option>
+                <option value="city1">Koh Kong, Cambodia</option>
+                <option value="city1">Takao, Cambodia</option>
+                <option value="city1">Kampot, Cambodia</option>
+                <option value="city1">Keb, Cambodia</option>
+                <option value="city1">Kompong Chanang, Cambodia</option>
+                <option value="city1">Poy Piet, Cambodia</option>
+              </select>
+            </label>
+          </div>
+          <div class="book-date">
+            <label for="date">
+              Schedule Date <br />
+              <input type="date" />
+            </label>
+          </div>
+        </div>
+        <div class="message">
+          <label for="add-message">
+            Message <br />
+            <textarea name="add-msg" id="add-message"> </textarea>
+          </label>
+        </div>
+        <div class="booked-btn">
+          <label for="appointment">
+            <input
+              type="submit"
+              value="Book Appointment"
+              style="font-size: 25px"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

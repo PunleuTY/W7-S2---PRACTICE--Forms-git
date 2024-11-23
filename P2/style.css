@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #497486;
+}
+.container {
+  display: grid;
+  grid-template-rows: 80px 1fr 80px;
+  background: #eff1f1;
+  width: 700px;
+  height: 700px;
+  border-radius: 20px;
+}
+.container .head {
+  background: eff1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .head p {
+  font-size: 30px;
+}
+.container .main {
+  background: white;
+  padding: 20px;
+}
+.container .main .inner-grid {
+  display: grid;
+  grid-template-columns: 320px 320px;
+  column-gap: 20px;
+  color: #02b589;
+}
+.container .main .inner-grid input {
+  width: 100%;
+  height: 30px;
+  border: 1px groove;
+}
+
+.container .email {
+  margin-top: 10px;
+  color: #02b589;
+}
+.container .email input {
+  width: 100%;
+  height: 25px;
+  border: 1px groove;
+}
+.container .inner-grid .password {
+  margin-top: 10px;
+  color: #02b589;
+}
+.container .inner-grid .password input {
+  border: 1px groove;
+}
+.container .inner-grid .confirm-password {
+  margin-top: 10px;
+  color: #02b589;
+}
+.container .inner-grid .confirm-password input {
+  border: 1px groove;
+}
+.container .inner-grid .gender {
+  margin-top: 10px;
+  color: #02b589;
+}
+.container .inner-grid .gender .m-f {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  color: #595a5e;
+}
+.container .inner-grid .hobby {
+  margin-top: 10px;
+  color: #02b589;
+}
+.container .inner-grid .hobby .hobbies {
+  display: flex;
+  gap: 10px;
+  color: #595a5e;
+}
+.container .inner-grid .hobby .hobbies span {
+  margin-top: 8px;
+}
+.container .inner-grid .hobby input {
+  width: 12px;
+}
+.container .about-income {
+  display: grid;
+  grid-template-columns: 340px 280px 10px;
+}
+.container .about-income .s-income {
+  color: #02b589;
+}
+.container .about-income .s-income select {
+  width: 95%;
+  border: 1px groove;
+}
+.container .about-income .income {
+  color: #02b589;
+}
+.container .about-income .income input {
+  width: 90%;
+}
+.container .about-income .income-box {
+  width: 45px;
+  height: 30px;
+  margin-top: 10px;
+  background: #12bb93;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.container .about-income .income-box span {
+  font-size: 25px;
+}
+.container .inner-grid .profile {
+  margin-top: 10px;
+}
+.container .inner-grid .profile input {
+  border: none;
+}
+.container .inner-grid .age {
+  margin-top: 10px;
+}
+.container .inner-grid .age input {
+  height: 20px;
+  border: 1px groove;
+}
+.container .Bio {
+  color: #12bb93;
+}
+.container .Bio textarea {
+  width: 100%;
+  height: 130px;
+  border: 1px groove;
+}
+.container .tail {
+  display: flex;
+  justify-content: flex-end;
+}
+.tail .create-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -9px;
+  padding: 25px;
+}
+.tail .create-btn input {
+  height: 40px;
+  width: 60px;
+  color: white;
+  border: none;
+  background: #12bb93;
+  border-radius: 10px;
+}
